@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VIKING LONGSHIPS</title>
+  <style>
+    :root {
+      --ink: #1e2a33;
+      --paper: #f7f4ee;
+      --card: #ffffff;
+      --accent: #731f1f;
+      --accent-dark: #501414;
+      --line: #ddd5c4;
+      --soft: #e9f1f5;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.75;
+    }
+
+    header.hero {
+      background: var(--accent-dark);
+      color: #ffffff;
+      text-align: center;
+      padding: 52px 20px 44px;
+    }
+
+    header.hero h1 {
+      margin: 0 0 10px;
+      font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      font-size: clamp(28px, 5vw, 46px);
+      line-height: 1.2;
+    }
+
+    header.hero p {
+      margin: 0;
+      color: #cfe3ee;
+      font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      font-size: 18px;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--accent);
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 4px;
+      padding: 8px 16px;
+      background: #ffffff;
+      color: var(--accent-dark);
+      text-decoration: none;
+      border-radius: 999px;
+      font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    nav a:hover { background: #ffd98a; }
+
+    .page {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 8px 20px 70px;
+    }
+
+    section {
+      margin: 44px auto;
+      scroll-margin-top: 80px;
+    }
+
+    #introduction, #main, #conclusions, #bibliography { max-width: 760px; }
+
+    h2 {
+      margin: 0 0 18px;
+      padding-bottom: 8px;
+      border-bottom: 3px solid var(--line);
+      color: var(--accent-dark);
+      font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      font-size: 30px;
+    }
+
+    section > p { margin: 0 0 18px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      margin-bottom: 12px;
+      border-radius: 10px;
+      background: #d9d9d9;
+    }
+
+    .card p { margin: 0 0 10px; }
+    .card a { color: var(--accent); }
+
+    .options label {
+      display: block;
+      margin: 2px 0;
+      padding: 6px 8px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .options label:hover { background: var(--soft); }
+
+    details {
+      margin-top: 12px;
+      padding: 8px 12px;
+      background:  #e25555;
+      border-radius: 10px;
+    }
+
+    summary {
+      cursor: pointer;
+      color: var(--accent-dark);
+      font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      font-weight: 600;
+    }
+
+    details p { margin: 8px 0 0; }
+
+    #bibliography p {
+      margin: 0 0 10px;
+      padding-left: 1.6em;
+      text-indent: -1.6em;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 800px) {
+      .grid { grid-template-columns: 1fr; }
+      body { font-size: 17px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <h1>Why Viking Longships Were Successful</h1>
+    <p>How a long, narrow wooden boat changed the map of Europe</p>
+  </header>
+
+  <nav>
+    <a href="#introduction">Introduction</a>
+    <a href="#main">Main</a>
+    <a href="#pictures">Pictures</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#conclusions">Conclusions</a>
+    <a href="#bibliography">Bibliography</a>
+  </nav>
+
+  <div class="page">
+
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <p>
+        Imagine this, its 793 AD, your a viking raiding party has just landed on the coast of Northumbria,
+        in now what is  northern England, youre about to attack a village that has no warning,
+        you are exceeding speeds of 15 knots, this is the first time the people of Northumbria have seen a ship like this
+        and you are about to take all of their valuables and leave before they can even react. This is the power of the Viking longship.
+      <p>
+       None of this could have happened without the clever engerneering of the longship, a boat that was fast, flexible and able
+       to go places that other ships at the time could not, these ships allowed quick raids, long distance travel 
+       and the ability to carry lots of cargo, they could carry people, animals and goods across the sea, and they could be useful for both trade and war.
+      </p>
+      <p>
+        Ships like this was also a major parts of the Viking culture, they were a symbol of status and power, and they were often used in burials, art and poetry.
+        imagine the vikings for a monent, you probally think about someone with a horned helmate, long beard and long hair, and a viking longship
+        this is the image that has been etched in our minds for centuries, and it is all thanks to the longship.
+      <p>
+        <p>
+          So now we ask the question, why were the Viking longships this sucessful? How do we even know what this marvel of engineering looked like?
+          how do we know how it was built? How do we know how it was used? These are all questions that i will anser in this article.
+        </p>
+      
+    </section>
+
+    <section id="main">
+      <h2>Main</h2>
+      <p>
+       We know that the viking age lasted from the late 700s to the 1100s, we know this because of the written records at the time
+       and we also know this because of the archeological evidence that has been found, we know that the vikings were raiders, traders and settlers,
+       we know that they traveled across Europe, the North Atlantic and beyond, and that their ships were central to all of it.
+      </p>
+      <p>
+       There is evidence of the longships, For example we have the Gokstad ship, which was found in a burial mound in Norway in 1880, it is about 23 meters long and 5 meters wide,
+        its long, narrow, low shape shows what a fast, shallow hull looked like. It had a mast, 16 oar holes along each side showing that this was a 32 crew ship,
+        this ship was classified as a karve, this is a type of boat thats used for both trade and war, this ship could carry up to 64 people and also
+        reach top speeds of 22 kph, this was also a ship thats thought to be in service for 6 to 16 years, from about 890AD to 900AD.
+      <p>
+      Another example of a longship is the Oseberg ship. This vessel was nothing like a standard warship; it was built primarily as a ceremonial ship.
+       Because it was designed for luxury coastal travel rather than brutal sea combat, it had less oar ports, featuring 15 holes on each side for a total crew of 32.
+       Discovered in 1904, its delicate oak hull is famous for being covered in incredibly beautiful hand carved animal patterns. Built at around 820AD,
+       it spent roughly 14 years navigating the Norwegian fjords
+      </p>
+      <p>
+       
+      </p>
+      <p>
+        5
+      </p>
+      <p>
+       6
+      <p>
+       7
+      </p>
+      <p>
+       8
+      <p>
+       9
+      </p>
+      <p>
+       10
+      </p>
+      <p>
+       11
+      </p>
+      <p>
+       12
+      </p>
+      <p>
+       13
+      </p>
+    </section>
+ 
+    <section id="pictures">
+      <h2>Pictures</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Gokstad_Ship_Side_View.JPG?width=500" alt="Side view of the Gokstad ship">
+          <p>
+            <strong>1. The Gokstad ship.</strong> Seen from the side, the Gokstad ship was found in
+            a burial mound in Norway in 1880. It's about 23 metres long and 5 metres wide, and its
+            long, narrow, low shape shows what a fast, shallow hull looked like. It had a mast, 16
+            oar holes along each side and a steering oar on the right hand side, so this one ship
+            shows nearly everything we talk about on this page.
+          </p>
+          <p><a href="https://commons.wikimedia.org/wiki/File:Gokstad_Ship_Side_View.JPG">Source: Wikimedia Commons</a></p>
+        </div>
+        <div class="card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Reconstructed_Viking_longship_Havhingsten_fra_Glendalough_under_construction_showing_part_of_the_inside2.jpg?width=500" alt="Inside of a Viking longship reconstruction while it was being built">
+          <p>
+            <strong>2. Inside a hull under construction.</strong> This is part of the inside of the
+            Havhingsten fra Glendalough (the Sea Stallion from Glendalough) while the
+            reconstruction was still being built. A view like this shows how the ship is really a
+            shell of overlapping planks, with the ribs fitted inside afterwards. Building the shell
+            first and tying the ribs in later is one reason the hull was so light and could flex in
+            waves.
+          </p>
+          <p><a href="https://commons.wikimedia.org/wiki/File:Reconstructed_Viking_longship_Havhingsten_fra_Glendalough_under_construction_showing_part_of_the_inside2.jpg">Source: Wikimedia Commons</a></p>
+        </div>
+        <div class="card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sea_Stallion_lowering_sail%2C_crop.jpg?width=500" alt="The Sea Stallion replica Viking ship lowering its sail">
+          <p>
+            <strong>3. Lowering the sail.</strong> The Sea Stallion, a modern reconstruction of a
+            large Viking warship, lowering its sail. One square sail drove the ship across open
+            water, and the crew could drop it and switch to oars when the wind died, when entering a
+            river or when coming in to land. This ship sailed from Denmark to Dublin in 2007 and
+            came back in 2008.
+          </p>
+          <p><a href="https://commons.wikimedia.org/wiki/File:Sea_Stallion_lowering_sail,_crop.jpg">Source: Wikimedia Commons</a></p>
+        </div>
+        <div class="card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Skuldelev_1%2C_Viking_Ship_Museum_2017-08-18.jpg?width=500" alt="Skuldelev 1, a Viking knarr, at the Viking Ship Museum in Roskilde">
+          <p>
+            <strong>4. A knarr cargo ship.</strong> Skuldelev 1 is what's left of a knarr, a broad,
+            deep ocean going cargo ship, on display at the Viking Ship Museum in Roskilde, Denmark.
+            It was one of five ships sunk in Roskilde Fjord around 1070 and dug up in 1962. Compared
+            with a longship, a knarr was wider and carried more, which is why it was the ship of
+            choice for taking people, animals and goods to places like Iceland and Greenland.
+          </p>
+          <p><a href="https://commons.wikimedia.org/wiki/File:Skuldelev_1,_Viking_Ship_Museum_2017-08-18.jpg">Source: Wikimedia Commons</a></p>
+        </div>
+        <div class="card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lindisfarne_Priory_from_above.jpg?width=500" alt="Lindisfarne Priory seen from above">
+          <p>
+            <strong>5. Lindisfarne.</strong> These are the ruins of Lindisfarne Priory on Holy
+            Island, off the north east coast of England. The raid on the monastery here in 793 is
+            traditionally seen as the start of the Viking Age. The ruins in the picture belong to a
+            later medieval priory built on the same site, but the island's spot beside the sea shows
+            why a raid from ships could hit so suddenly.
+          </p>
+          <p><a href="https://commons.wikimedia.org/wiki/File:Lindisfarne_Priory_from_above.jpg">Source: Wikimedia Commons</a></p>
+        </div>
+        <div class="card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/L%27Anse_aux_Meadows%2C_recreated_long_house.jpg?width=500" alt="A recreated Norse long house at L'Anse aux Meadows">
+          <p>
+            <strong>6. L'Anse aux Meadows.</strong> A recreated long house at L'Anse aux Meadows, on
+            the northern tip of Newfoundland in Canada. It's the best known and best confirmed Norse
+            site in North America, and tree rings date Norse activity there to the year 1021. To get
+            there, Norse sailors had crossed the North Atlantic by way of Iceland and Greenland in
+            ships built for open water.
+          </p>
+          <p><a href="https://commons.wikimedia.org/wiki/File:L%27Anse_aux_Meadows,_recreated_long_house.jpg">Source: Wikimedia Commons</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="quiz">
+      <h2>Quiz</h2>
+      <p>Pick an answer for each question, then tap "Show answer" to see how you did.</p>
+
+      <form>
+        <div class="grid">
+
+          <div class="card">
+            <p><strong>Question 1.</strong> What building method made longship hulls light and flexible?</p>
+            <div class="options">
+              <label><input type="radio" name="q1"> A. Carvel (planks edge to edge)</label>
+              <label><input type="radio" name="q1"> B. Clinker (overlapping planks)</label>
+              <label><input type="radio" name="q1"> C. A hollowed out single log</label>
+              <label><input type="radio" name="q1"> D. Solid stone blocks</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <p><strong>B.</strong> Overlapping planks riveted together made a light, strong hull that could flex.</p>
+            </details>
+          </div>
+
+          <div class="card">
+            <p><strong>Question 2.</strong> Why was a shallow draught so useful?</p>
+            <div class="options">
+              <label><input type="radio" name="q2"> A. It made the ship sink slowly</label>
+              <label><input type="radio" name="q2"> B. It let ships go up rivers and land on beaches</label>
+              <label><input type="radio" name="q2"> C. It made the ship heavier in storms</label>
+              <label><input type="radio" name="q2"> D. It allowed more cargo to be hidden</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <p><strong>B.</strong> Longships could go where deeper ships couldn't, including up rivers and onto beaches.</p>
+            </details>
+          </div>
+
+          <div class="card">
+            <p><strong>Question 3.</strong> How did you steer a longship?</p>
+            <div class="options">
+              <label><input type="radio" name="q3"> A. With a wheel in the centre of the deck</label>
+              <label><input type="radio" name="q3"> B. With a side mounted steering oar on the starboard side</label>
+              <label><input type="radio" name="q3"> C. By changing the sail only</label>
+              <label><input type="radio" name="q3"> D. By dragging an anchor</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <p><strong>B.</strong> A big steering oar sat at the back on the right hand (starboard) side.</p>
+            </details>
+          </div>
+
+          <div class="card">
+            <p><strong>Question 4.</strong> What was a knarr?</p>
+            <div class="options">
+              <label><input type="radio" name="q4"> A. A narrow warship built for raiding</label>
+              <label><input type="radio" name="q4"> B. A broad, deep cargo ship for carrying goods and people</label>
+              <label><input type="radio" name="q4"> C. A small boat for fishing in rivers only</label>
+              <label><input type="radio" name="q4"> D. A ceremonial ship used only for burials</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <p><strong>B.</strong> A knarr was a cargo ship for trade and settlement voyages, not a warship.</p>
+            </details>
+          </div>
+
+          <div class="card">
+            <p><strong>Question 5.</strong> What did Vikings do when they reached rapids on a river like the Dnieper?</p>
+            <div class="options">
+              <label><input type="radio" name="q5"> A. They turned back</label>
+              <label><input type="radio" name="q5"> B. They carried or dragged their boats around the rapids</label>
+              <label><input type="radio" name="q5"> C. They burned their ships</label>
+              <label><input type="radio" name="q5"> D. They waited for winter</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <p><strong>B.</strong> That's called portaging, and the light hulls made it possible.</p>
+            </details>
+          </div>
+
+          <div class="card">
+            <p><strong>Question 6.</strong> Which raid in 793 is traditionally seen as the start of the Viking Age?</p>
+            <div class="options">
+              <label><input type="radio" name="q6"> A. Lindisfarne</label>
+              <label><input type="radio" name="q6"> B. Paris</label>
+              <label><input type="radio" name="q6"> C. Dublin</label>
+              <label><input type="radio" name="q6"> D. York</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <p><strong>A.</strong> Lindisfarne, a monastery off the north east coast of England.</p>
+            </details>
+          </div>
+
+        </div>
+      </form>
+    </section>
+
+    <section id="conclusions">
+      <h2>Conclusions</h2>
+      <p>
+       14
+      </p>
+      <p>
+        15
+      </p>
+      <p>
+       16
+      </p>
+      <p>
+       17.
+      </p>
+    </section>
+
+    <section id="bibliography">
+      <h2>Bibliography</h2>
+      <p>Bill, J. (2008). 'Ships and seafaring'. In S. Brink and N. Price (eds.), <em>The Viking World</em>. Abingdon: Routledge.</p>
+      <p>Crumlin-Pedersen, O. and Olsen, O. (eds.) (2002). <em>The Skuldelev Ships I</em>. Roskilde: Viking Ship Museum.</p>
+      <p>Kuitems, M. et al. (2022). 'Evidence for European presence in the Americas in AD 1021'. <em>Nature</em>, 601, pp. 388-391.</p>
+      <p>Roesdahl, E. (1991). <em>The Vikings</em>. London: Penguin.</p>
+      <p>Sawyer, P. (ed.) (1997). <em>The Oxford Illustrated History of the Vikings</em>. Oxford: Oxford University Press.</p>
+      <p>Williams, G., Pentz, P. and Wemhoff, M. (eds.) (2014). <em>Vikings: Life and Legend</em>. London: British Museum Press.</p>
+      <p>Viking Ship Museum, Roskilde. <a href="https://www.vikingeskibsmuseet.dk/en">vikingeskibsmuseet.dk</a></p>
+      <p>Pictures: Wikimedia Commons. The link under each picture goes to its file page, which lists the photographer and licence.</p>
+    </section>
+
+  </div>
+
+</body>
+</html>
